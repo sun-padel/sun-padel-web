@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sun&Pádel — Local padel partner for tour operators in Marbella & Estepona</title>
+<meta name="description" content="Local ground partner for padel tour operators and holiday rental companies on the Costa del Sol. Club selection, day-by-day coordination and a local contact for your groups in Marbella and Estepona.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sun-padel.com/">
+<meta property="og:title" content="Sun&Pádel — Your local padel partner in Marbella & Estepona">
+<meta property="og:description" content="You sell the trip. I make sure it works on the ground. Local padel coordination for tour operators and holiday rental companies on the Costa del Sol.">
+<meta property="og:image" content="https://sun-padel.com/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Narrow:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --noche:#0E2A3B;
+  --noche-2:#143A4F;
+  --sol:#F2A93B;
+  --sol-claro:#F7C55E;
+  --terracota:#D9793F;
+  --arena:#F4EEE3;
+  --arena-2:#EBE2D2;
+  --papel:#FBF8F2;
+  --tinta:#0E2A3B;
+  --piedra:#5A6169;
+  --linea:rgba(14,42,59,.12);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Archivo',sans-serif;color:var(--tinta);background:var(--papel);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Archivo Narrow',sans-serif;line-height:1.05;font-weight:700}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+.eyebrow{font-family:'Archivo';font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--terracota)}
+img{max-width:100%;display:block}
+
+/* language toggle mechanism */
+[data-lang]{display:none!important}
+body.es [data-lang="es"]{display:revert!important}
+body.en [data-lang="en"]{display:revert!important}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:50;background:rgba(14,42,59,.94);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:11px;color:#fff;text-decoration:none;font-family:'Archivo Narrow';font-weight:700;font-size:1.35rem;letter-spacing:.01em}
+.logo b{color:var(--sol);font-weight:700}
+.nav-right{display:flex;align-items:center;gap:24px}
+.nav-links{display:flex;gap:26px;align-items:center}
+.nav-links a{color:rgba(255,255,255,.82);text-decoration:none;font-size:.9rem;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--sol)}
+.nav-cta{background:var(--sol);color:var(--noche)!important;padding:10px 20px;border-radius:100px;font-weight:600!important;font-size:.9rem}
+.nav-cta:hover{background:var(--sol-claro)}
+.lang{display:flex;gap:0;background:rgba(255,255,255,.1);border-radius:100px;padding:3px}
+.lang button{background:none;border:0;color:rgba(255,255,255,.6);font-family:'Archivo';font-size:.8rem;font-weight:600;padding:5px 13px;border-radius:100px;cursor:pointer;transition:all .2s}
+.lang button.active{background:var(--sol);color:var(--noche)}
+@media(max-width:900px){.nav-links{display:none}}
+
+/* HERO */
+.hero{position:relative;min-height:88vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url('hero.jpg') center/cover no-repeat;z-index:0}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,42,59,.6),rgba(14,42,59,.85))}
+.hero-content{position:relative;z-index:2;max-width:860px;padding:0 24px}
+.hero .eyebrow{color:var(--sol-claro);font-size:.82rem;letter-spacing:.26em;text-shadow:0 2px 12px rgba(0,0,0,.5)}
+.hero h1{font-size:clamp(2.4rem,5.6vw,4.4rem);margin:18px 0 22px;color:#fff;text-shadow:0 3px 20px rgba(0,0,0,.45)}
+.hero p{font-size:clamp(1.05rem,2vw,1.3rem);color:#fff;max-width:660px;margin:0 auto 34px;font-weight:400;text-shadow:0 2px 14px rgba(0,0,0,.55)}
+.hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;background:var(--sol);color:var(--noche);padding:15px 32px;border-radius:100px;text-decoration:none;font-weight:600;font-size:1rem;transition:all .2s}
+.btn:hover{background:var(--sol-claro);transform:translateY(-2px)}
+.btn-ghost{background:transparent;border:1.5px solid rgba(255,255,255,.55);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1);border-color:#fff}
+
+/* SECTIONS */
+section{padding:100px 0}
+.section-sm{padding:80px 0}
+.title{text-align:center;font-size:clamp(2rem,4vw,2.8rem);margin:14px 0 18px}
+.lead{text-align:center;max-width:640px;margin:0 auto 52px;color:var(--piedra);font-size:1.12rem}
+
+/* PROBLEMA */
+.problema{background:var(--arena)}
+.problema .inner{max-width:720px;margin:0 auto;text-align:center}
+.problema h2{font-size:clamp(1.8rem,3.5vw,2.5rem);margin-bottom:24px}
+.problema p{font-size:1.15rem;color:var(--piedra);margin-bottom:16px}
+.problema p.remate{color:var(--terracota);font-weight:600;font-size:1.25rem;margin-bottom:0}
+
+/* TOUROPERADORES */
+.tour{background:var(--papel)}
+.tour .eyebrow{text-align:center}
+.offer-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;max-width:960px;margin:0 auto}
+.offer{background:#fff;border:1px solid var(--linea);border-radius:18px;padding:38px 34px}
+.offer-num{font-family:'Archivo Narrow';font-weight:700;font-size:1rem;color:var(--terracota);letter-spacing:.08em;margin-bottom:14px}
+.offer h3{font-size:1.6rem;margin-bottom:12px}
+.offer .when{font-size:.88rem;font-weight:600;color:var(--tinta);margin-bottom:12px}
+.offer p{color:var(--piedra);font-size:1rem}
+.price-note{max-width:960px;margin:26px auto 0;background:var(--arena);border-left:3px solid var(--sol);border-radius:6px;padding:18px 22px;font-size:1rem;color:var(--tinta)}
+.price-note strong{font-weight:700}
+@media(max-width:820px){.offer-grid{grid-template-columns:1fr}}
+
+/* DESTINO */
+.vida{background:var(--noche);color:#fff}
+.vida-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.vida h2{font-size:clamp(2rem,4vw,2.8rem);margin:14px 0 22px;color:#fff}
+.vida p{color:rgba(255,255,255,.82);font-size:1.1rem;margin-bottom:16px}
+.vida p strong{color:#fff;font-weight:600}
+.vida-foto img{width:100%;height:100%;min-height:400px;object-fit:cover;border-radius:16px;display:block}
+@media(max-width:820px){.vida-grid{grid-template-columns:1fr;gap:32px}}
+
+/* ALQUILERES */
+.alq{background:var(--arena)}
+.alq-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.alq h2{font-size:clamp(1.9rem,3.6vw,2.6rem);margin:14px 0 22px}
+.alq .intro p{color:var(--piedra);font-size:1.1rem;margin-bottom:16px}
+.alq-list{list-style:none;display:flex;flex-direction:column;gap:14px}
+.alq-list li{background:#fff;border:1px solid var(--linea);border-radius:14px;padding:18px 20px 18px 56px;position:relative;color:var(--tinta);font-size:1rem}
+.alq-list li::before{content:"";position:absolute;left:20px;top:21px;width:20px;height:20px;border-radius:50%;background:var(--noche)}
+.alq-list li::after{content:"";position:absolute;left:27px;top:25px;width:5px;height:9px;border:solid var(--sol);border-width:0 2px 2px 0;transform:rotate(45deg)}
+.alq .formula{margin-top:20px;font-size:.98rem;color:var(--piedra)}
+.alq .formula strong{color:var(--tinta)}
+@media(max-width:820px){.alq-grid{grid-template-columns:1fr;gap:32px}}
+
+/* SERVICIOS */
+.serv{background:var(--papel)}
+.serv .eyebrow{text-align:center}
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1000px;margin:0 auto}
+.card{background:#fff;border:1px solid var(--linea);border-radius:16px;padding:30px 26px;transition:all .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(14,42,59,.1);border-color:transparent}
+.card-icon{width:48px;height:48px;border-radius:12px;background:var(--arena);display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:1.5rem}
+.card h3{font-size:1.12rem;margin-bottom:8px;font-family:'Archivo';font-weight:700}
+.card p{color:var(--piedra);font-size:.95rem}
+@media(max-width:900px){.serv-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.serv-grid{grid-template-columns:1fr}}
+
+/* NOSOTROS */
+.nosotros{background:var(--arena)}
+.nos-solo{max-width:700px;margin:0 auto;text-align:center}
+.nosotros h2{font-size:clamp(1.8rem,3.5vw,2.5rem);margin:14px 0 22px}
+.nosotros p{color:var(--piedra);font-size:1.1rem;margin-bottom:16px}
+.nosotros .firma{color:var(--tinta);font-weight:600;font-size:1.15rem;margin-top:26px;font-style:italic}
+
+/* PASOS */
+.pasos{background:var(--papel)}
+.pasos-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:52px}
+.paso{text-align:center}
+.paso-num{width:56px;height:56px;border-radius:50%;background:var(--noche);color:var(--sol);font-family:'Archivo Narrow';font-weight:700;font-size:1.5rem;display:flex;align-items:center;justify-content:center;margin:0 auto 20px}
+.paso h3{font-size:1.1rem;margin-bottom:8px;font-family:'Archivo';font-weight:700}
+.paso p{color:var(--piedra);font-size:.95rem}
+@media(max-width:820px){.pasos-grid{grid-template-columns:1fr 1fr;gap:36px 24px}}
+@media(max-width:480px){.pasos-grid{grid-template-columns:1fr}}
+
+/* PRECIO */
+.precio{background:var(--noche);color:#fff;text-align:center}
+.precio .inner{max-width:700px;margin:0 auto}
+.precio h2{font-size:clamp(1.8rem,3.5vw,2.5rem);margin:14px 0 22px;color:#fff}
+.precio p{color:rgba(255,255,255,.82);font-size:1.12rem;margin-bottom:14px}
+
+/* CIERRE */
+.cierre{position:relative;text-align:center;color:#fff;overflow:hidden;padding:120px 0 90px}
+.cierre-bg{position:absolute;inset:0;background:linear-gradient(150deg,#143A4F,#B5551F);z-index:0}
+.cierre-bg::after{content:"";position:absolute;inset:0;background:rgba(14,42,59,.45)}
+.cierre .inner{position:relative;z-index:2;max-width:680px;margin:0 auto;padding:0 24px}
+.cierre h2{font-size:clamp(2rem,4.5vw,3.2rem);margin-bottom:18px;color:#fff}
+.cierre p{color:rgba(255,255,255,.9);font-size:1.15rem;margin-bottom:32px}
+.cierre .hero-btns{margin-bottom:56px}
+.cierre p.viajeros{font-size:.92rem;color:rgba(255,255,255,.75);margin:0}
+.cierre p.viajeros a{color:var(--sol-claro);text-decoration:underline;text-underline-offset:3px}
+
+/* FOOTER */
+footer{background:var(--noche-2);color:rgba(255,255,255,.7);padding:48px 0;text-align:center;font-size:.9rem}
+footer .logo{justify-content:center;margin-bottom:16px;font-size:1.2rem}
+footer a{color:var(--sol-claro);text-decoration:none}
+.footer-legal{margin-top:22px;display:flex;gap:8px 20px;justify-content:center;flex-wrap:wrap;font-size:.82rem}
+.footer-legal button{background:none;border:0;color:rgba(255,255,255,.6);font-family:'Archivo';font-size:.82rem;cursor:pointer;padding:0;transition:color .2s}
+.footer-legal button:hover{color:var(--sol-claro)}
+.footer-legal span{color:rgba(255,255,255,.25)}
+
+/* MODALES LEGALES */
+.modal-ov{position:fixed;inset:0;z-index:200;background:rgba(14,42,59,.72);backdrop-filter:blur(4px);display:none;align-items:flex-start;justify-content:center;padding:40px 20px;overflow-y:auto}
+.modal-ov.open{display:flex}
+.modal{background:var(--papel);max-width:720px;width:100%;border-radius:14px;padding:44px 44px 40px;position:relative;box-shadow:0 30px 80px rgba(14,42,59,.35);margin:auto}
+.modal h2{font-size:1.7rem;color:var(--tinta);margin-bottom:8px}
+.modal h3{font-family:'Archivo';font-weight:700;font-size:.98rem;color:var(--tinta);margin:22px 0 4px}
+.modal p{color:var(--piedra);font-size:.94rem;margin-bottom:12px}
+.modal ul{color:var(--piedra);font-size:.94rem;margin:0 0 14px 20px}
+.modal ul li{margin-bottom:5px}
+.modal .modal-eyebrow{font-family:'Archivo';font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--terracota);margin-bottom:14px}
+.modal-close{position:absolute;top:18px;right:20px;background:none;border:0;font-size:1.6rem;line-height:1;color:var(--piedra);cursor:pointer;padding:4px 8px;border-radius:8px;transition:all .2s}
+.modal-close:hover{background:var(--arena-2);color:var(--tinta)}
+@media(max-width:560px){.modal{padding:38px 24px 30px}.modal h2{font-size:1.4rem}}
+</style>
+</head>
+<body class="en">
+
+<!-- NAV -->
+<nav>
+  <div class="wrap nav-in">
+    <a href="#" class="logo">Sun<b>&</b>Pádel</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="#touroperadores" data-lang="es">Touroperadores</a><a href="#touroperadores" data-lang="en">Tour operators</a>
+        <a href="#alquileres" data-lang="es">Alquileres turísticos</a><a href="#alquileres" data-lang="en">Holiday rentals</a>
+        <a href="#nosotros" data-lang="es">Quién soy</a><a href="#nosotros" data-lang="en">About</a>
+        <a href="#contacto" class="nav-cta" data-lang="es">Hablemos</a><a href="#contacto" class="nav-cta" data-lang="en">Let's talk</a>
+      </div>
+      <div class="lang">
+        <button onclick="setLang('es')" id="btn-es">ES</button>
+        <button onclick="setLang('en')" id="btn-en" class="active">EN</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="eyebrow" data-lang="es">Socio local en Marbella y Estepona</div>
+    <div class="eyebrow" data-lang="en">Local partner in Marbella & Estepona</div>
+    <h1 data-lang="es">Tú vendes el viaje.<br>Yo me encargo de que aquí salga bien.</h1>
+    <h1 data-lang="en">You sell the trip.<br>I make sure it works on the ground.</h1>
+    <p data-lang="es">Coordinación local de pádel en la Costa del Sol para touroperadores y empresas de alquiler turístico. Clubes, días organizados y alguien de aquí pendiente de tus clientes mientras están en destino.</p>
+    <p data-lang="en">Local padel coordination on the Costa del Sol for tour operators and holiday rental companies. Clubs, days organised and someone local looking after your clients while they're here.</p>
+    <div class="hero-btns" data-lang="es">
+      <a href="mailto:info@sun-padel.com?subject=Touroperador%20%C2%B7%20Colaboraci%C3%B3n%20con%20Sun%26P%C3%A1del&amp;body=Hola%20Luis%2C%0A%0ASoy%20%5Bnombre%5D%2C%20de%20%5Bempresa%5D.%20Organizamos%20viajes%20de%20p%C3%A1del%20desde%20%5Bpa%C3%ADs%5D%20y%20nos%20interesa%20hablar%20de%20Marbella%20y%20Estepona.%0A%0AGrupos%20al%20a%C3%B1o%20%28aprox.%29%3A%20%0AFechas%20que%20nos%20interesan%3A%20%0A%0AGracias%2C%0A" class="btn">Soy touroperador</a>
+      <a href="mailto:info@sun-padel.com?subject=Alquiler%20tur%C3%ADstico%20%C2%B7%20Colaboraci%C3%B3n%20con%20Sun%26P%C3%A1del&amp;body=Hola%20Luis%2C%0A%0ASoy%20%5Bnombre%5D%2C%20de%20%5Bempresa%5D.%20Gestionamos%20%5Bn%C3%BAmero%5D%20alojamientos%20en%20%5Bzona%5D%20y%20nos%20interesa%20ofrecer%20p%C3%A1del%20a%20nuestros%20hu%C3%A9spedes.%0A%0AGracias%2C%0A" class="btn btn-ghost">Gestiono alquileres turísticos</a>
+    </div>
+    <div class="hero-btns" data-lang="en">
+      <a href="mailto:info@sun-padel.com?subject=Tour%20operator%20%C2%B7%20Working%20with%20Sun%26P%C3%A1del&amp;body=Hi%20Luis%2C%0A%0AI%27m%20%5Bname%5D%20from%20%5Bcompany%5D.%20We%20run%20padel%20trips%20from%20%5Bcountry%5D%20and%20we%27d%20like%20to%20talk%20about%20Marbella%20and%20Estepona.%0A%0AGroups%20per%20year%20%28approx.%29%3A%20%0ADates%20we%27re%20looking%20at%3A%20%0A%0AThanks%2C%0A" class="btn">I'm a tour operator</a>
+      <a href="mailto:info@sun-padel.com?subject=Holiday%20rentals%20%C2%B7%20Working%20with%20Sun%26P%C3%A1del&amp;body=Hi%20Luis%2C%0A%0AI%27m%20%5Bname%5D%20from%20%5Bcompany%5D.%20We%20manage%20%5Bnumber%5D%20properties%20in%20%5Barea%5D%20and%20we%27d%20like%20to%20offer%20padel%20to%20our%20guests.%0A%0AThanks%2C%0A" class="btn btn-ghost">I manage holiday rentals</a>
+    </div>
+  </div>
+</header>
+
+<!-- PROBLEMA -->
+<section class="problema section-sm">
+  <div class="wrap inner">
+    <h2 data-lang="es">Vender un viaje de pádel desde fuera es fácil.<br>Que funcione aquí, no tanto.</h2>
+    <h2 data-lang="en">Selling a padel trip from abroad is easy.<br>Making it work here is another story.</h2>
+    <p data-lang="es">Desde Londres o Estocolmo no ves qué club encaja con tu grupo, qué pasa si un traslado se retrasa o a quién llamar si alguien se lesiona el segundo día.</p>
+    <p data-lang="en">From London or Stockholm you can't see which club suits your group, what happens if a transfer runs late or who to call if someone gets injured on day two.</p>
+    <p class="remate" data-lang="es">Para eso hace falta alguien que viva aquí.</p>
+    <p class="remate" data-lang="en">That takes someone who lives here.</p>
+  </div>
+</section>
+
+<!-- TOUROPERADORES -->
+<section class="tour" id="touroperadores">
+  <div class="wrap">
+    <div class="eyebrow" data-lang="es">Para touroperadores</div>
+    <div class="eyebrow" data-lang="en">For tour operators</div>
+    <h2 class="title" data-lang="es">Tu equipo en destino,<br>sin abrir oficina aquí</h2>
+    <h2 class="title" data-lang="en">Your team on the ground,<br>without opening an office here</h2>
+    <p class="lead" data-lang="es">Trabajo contigo de dos formas. Puedes empezar por una y sumar la otra después.</p>
+    <p class="lead" data-lang="en">I work with you in two ways. Start with one and add the other later.</p>
+    <div class="offer-grid">
+      <div class="offer">
+        <div class="offer-num">01</div>
+        <h3 data-lang="es">Abrir el destino</h3>
+        <h3 data-lang="en">Opening the destination</h3>
+        <div class="when" data-lang="es">Si aún no vendes Marbella o Estepona.</div>
+        <div class="when" data-lang="en">If you don't sell Marbella or Estepona yet.</div>
+        <p data-lang="es">Te preparo el terreno: qué clubes encajan con tus grupos, qué zonas y alojamientos tienen sentido y cómo se organiza una semana tipo. Para que lances el producto sabiendo lo que vendes.</p>
+        <p data-lang="en">I prepare the ground: which clubs suit your groups, which areas and accommodation make sense and what a typical week looks like. So you launch the product knowing exactly what you're selling.</p>
+      </div>
+      <div class="offer">
+        <div class="offer-num">02</div>
+        <h3 data-lang="es">Coordinación en destino</h3>
+        <h3 data-lang="en">On-the-ground coordination</h3>
+        <div class="when" data-lang="es">Cada vez que llega uno de tus grupos.</div>
+        <div class="when" data-lang="en">Every time one of your groups arrives.</div>
+        <p data-lang="es">Recibo al grupo, coordino clubes, días y traslados con los proveedores que tú contratas, y estoy localizable toda la estancia. Si algo cambia, lo resuelvo aquí antes de que se convierta en tu problema.</p>
+        <p data-lang="en">I welcome the group, coordinate clubs, days and transfers with the providers you've booked, and I'm reachable throughout the stay. If something changes, I sort it out here before it becomes your problem.</p>
+      </div>
+    </div>
+    <div class="price-note" data-lang="es"><strong>Precio cerrado.</strong> Por grupo, o con una cuota mensual si trabajamos de forma continuada. Lo ajustamos a tu volumen.</div>
+    <div class="price-note" data-lang="en"><strong>A set price, agreed upfront.</strong> Per group, or a monthly fee if we work together regularly. We tailor it to your volume.</div>
+  </div>
+</section>
+
+<!-- DESTINO -->
+<section class="vida">
+  <div class="wrap vida-grid">
+    <div>
+      <div class="eyebrow" data-lang="es" style="color:var(--sol-claro)">Lo que vendes</div>
+      <div class="eyebrow" data-lang="en" style="color:var(--sol-claro)">What you're selling</div>
+      <h2 data-lang="es">Un destino que se vende solo.<br>Si aquí se hace bien.</h2>
+      <h2 data-lang="en">A destination that sells itself.<br>If it's done right here.</h2>
+      <p data-lang="es">Más de 300 días de sol al año. Pistas al aire libre junto al Mediterráneo. Marbella como marca. Y el aeropuerto de Málaga a 45–60 minutos.</p>
+      <p data-lang="en">Over 300 days of sun a year. Outdoor courts by the Mediterranean. Marbella as a brand. And Málaga airport 45–60 minutes away.</p>
+      <p data-lang="es">Tus clientes juegan por la mañana y por la tarde tienen playa, Puerto Banús o descanso. <strong>El pádel metido dentro de unas vacaciones de verdad.</strong></p>
+      <p data-lang="en">Your clients play in the morning and spend the afternoon on the beach, in Puerto Banús or simply resting. <strong>Padel wrapped inside a real holiday.</strong></p>
+    </div>
+    <div class="vida-foto">
+      <img src="banus.webp" alt="Puerto Banús al atardecer, Marbella">
+    </div>
+  </div>
+</section>
+
+<!-- ALQUILERES -->
+<section class="alq" id="alquileres">
+  <div class="wrap alq-grid">
+    <div class="intro">
+      <div class="eyebrow" data-lang="es">Para empresas de alquiler turístico</div>
+      <div class="eyebrow" data-lang="en">For holiday rental companies</div>
+      <h2 data-lang="es">Tus huéspedes preguntan dónde jugar al pádel. Yo les respondo.</h2>
+      <h2 data-lang="en">Your guests ask where to play padel. I answer.</h2>
+      <p data-lang="es">Muchos huéspedes llegan con la pala en la maleta. Y la pregunta acaba en tu correo o en tu WhatsApp.</p>
+      <p data-lang="en">Plenty of guests arrive with a racket in their suitcase. And the question ends up in your inbox or on your WhatsApp.</p>
+      <p data-lang="es">Ahí entro yo.</p>
+      <p data-lang="en">That's where I come in.</p>
+    </div>
+    <div>
+      <ul class="alq-list" data-lang="es">
+        <li>Me pasas al huésped y yo me ocupo: qué club, cuándo y cómo llegar.</li>
+        <li>Tu equipo no pierde tiempo con algo que no es lo suyo.</li>
+        <li>Tu huésped vuelve a casa con una razón más para repetir contigo.</li>
+        <li>Funciona en los dos sentidos: los grupos de pádel que coordino también necesitan dónde alojarse.</li>
+      </ul>
+      <ul class="alq-list" data-lang="en">
+        <li>You pass me the guest and I take care of it: which club, when and how to get there.</li>
+        <li>Your team doesn't lose time on something that isn't their job.</li>
+        <li>Your guest goes home with one more reason to book with you again.</li>
+        <li>It works both ways: the padel groups I coordinate also need somewhere to stay.</li>
+      </ul>
+      <p class="formula" data-lang="es"><strong>La fórmula, a tu medida:</strong> colaboración por recomendación o cuota mensual cerrada. Sin letra pequeña.</p>
+      <p class="formula" data-lang="en"><strong>A set-up that suits you:</strong> a referral partnership or a fixed monthly fee. No small print.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="serv" id="servicios">
+  <div class="wrap">
+    <div class="eyebrow" data-lang="es">Qué coordino</div>
+    <div class="eyebrow" data-lang="en">What I coordinate</div>
+    <h2 class="title" data-lang="es">Todo lo que pasa aquí</h2>
+    <h2 class="title" data-lang="en">Everything that happens here</h2>
+    <p class="lead" data-lang="es">Para tus grupos o para tus huéspedes. Tú decides qué parte me dejas.</p>
+    <p class="lead" data-lang="en">For your groups or your guests. You decide which part you leave to me.</p>
+    <div class="serv-grid">
+      <div class="card">
+        <div class="card-icon">📍</div>
+        <h3 data-lang="es">Clubes que encajan</h3>
+        <h3 data-lang="en">Clubs that fit</h3>
+        <p data-lang="es">Recomiendo qué clubes visitar según el nivel y lo que busca cada grupo. Conozco los de la zona por dentro.</p>
+        <p data-lang="en">I recommend which clubs to visit based on each group's level and what they're after. I know the local clubs from the inside.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🗓️</div>
+        <h3 data-lang="es">Días organizados</h3>
+        <h3 data-lang="en">Days organised</h3>
+        <p data-lang="es">Horarios de juego, clases con los clubes si el grupo las quiere, comidas y tiempo libre. Que todo encaje.</p>
+        <p data-lang="en">Playing times, lessons with the clubs if the group wants them, meals and free time. All of it fitting together.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🚐</div>
+        <h3 data-lang="es">Traslados coordinados</h3>
+        <h3 data-lang="en">Coordinated transfers</h3>
+        <p data-lang="es">Con una empresa profesional de traslados. Yo me encargo de que horarios y recogidas cuadren.</p>
+        <p data-lang="en">With a professional transfer company. I make sure times and pick-ups line up.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🏡</div>
+        <h3 data-lang="es">Alojamiento con sentido</h3>
+        <h3 data-lang="en">Accommodation that makes sense</h3>
+        <p data-lang="es">Te digo qué hoteles y villas encajan con cada grupo y su ruta de clubes. Se reserva y se paga directamente.</p>
+        <p data-lang="en">I tell you which hotels and villas suit each group and its club route. Booked and paid directly.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🤝</div>
+        <h3 data-lang="es">Alguien local, localizable</h3>
+        <h3 data-lang="en">A local, always reachable</h3>
+        <p data-lang="es">Durante toda la estancia. Un problema aquí se resuelve aquí, no con un correo a otro país.</p>
+        <p data-lang="en">Throughout the stay. A problem here gets solved here, not with an email to another country.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🍽️</div>
+        <h3 data-lang="es">Comer y tarde libre</h3>
+        <h3 data-lang="en">Food and free afternoons</h3>
+        <p data-lang="es">Dónde comer bien después de jugar y qué hacer con la tarde: playa, Puerto Banús o descanso.</p>
+        <p data-lang="en">Where to eat well after playing and what to do with the afternoon: beach, Puerto Banús or rest.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NOSOTROS -->
+<section class="nosotros" id="nosotros">
+  <div class="wrap nos-solo">
+    <div class="eyebrow" data-lang="es">Quién soy</div>
+    <div class="eyebrow" data-lang="en">About me</div>
+    <h2 data-lang="es">No una agencia.<br>Una persona que vive aquí.</h2>
+    <h2 data-lang="en">Not an agency.<br>A person who lives here.</h2>
+    <p data-lang="es">Soy Luis González. Llevo más de diez años trabajando en hoteles de la Costa del Sol, de cara al cliente. Sé cómo se recibe al que llega, qué le molesta y qué hace que vuelva.</p>
+    <p data-lang="en">I'm Luis González. I've spent over ten years working in hotels on the Costa del Sol, face to face with guests. I know how to welcome people, what annoys them and what makes them come back.</p>
+    <p data-lang="es">Además fundé Bola Pádel, un medio de pádel. Conozco el sector y los clubes de la zona por dentro.</p>
+    <p data-lang="en">I also founded Bola Pádel, a padel media outlet. I know the sport and the local clubs from the inside.</p>
+    <p class="firma" data-lang="es">«Llevo años diciendo que el pádel tiene un problema de hospitality. Sun&Pádel es lo que pasa cuando dejo de decirlo y lo hago.»</p>
+    <p class="firma" data-lang="en">"For years I've said padel has a hospitality problem. Sun&Pádel is what happens when I stop saying it and start doing it."</p>
+  </div>
+</section>
+
+<!-- PASOS -->
+<section class="pasos">
+  <div class="wrap">
+    <h2 class="title" data-lang="es">Cómo empezamos</h2>
+    <h2 class="title" data-lang="en">How we get started</h2>
+    <div class="pasos-grid">
+      <div class="paso">
+        <div class="paso-num">1</div>
+        <h3 data-lang="es">Me escribes</h3>
+        <h3 data-lang="en">You get in touch</h3>
+        <p data-lang="es">Qué grupos mueves o qué alojamientos gestionas.</p>
+        <p data-lang="en">What groups you run or what properties you manage.</p>
+      </div>
+      <div class="paso">
+        <div class="paso-num">2</div>
+        <h3 data-lang="es">Hablamos</h3>
+        <h3 data-lang="en">We talk</h3>
+        <p data-lang="es">Una videollamada o un café. Vemos qué necesitas aquí.</p>
+        <p data-lang="en">A video call or a coffee. We look at what you need here.</p>
+      </div>
+      <div class="paso">
+        <div class="paso-num">3</div>
+        <h3 data-lang="es">Propuesta cerrada</h3>
+        <h3 data-lang="en">A clear proposal</h3>
+        <p data-lang="es">Qué hago, qué no hago y cuánto cuesta. Por escrito.</p>
+        <p data-lang="en">What I do, what I don't and what it costs. In writing.</p>
+      </div>
+      <div class="paso">
+        <div class="paso-num">4</div>
+        <h3 data-lang="es">Primer grupo</h3>
+        <h3 data-lang="en">First group</h3>
+        <p data-lang="es">Empezamos con un grupo o un huésped y vemos cómo funciona.</p>
+        <p data-lang="en">We start with one group or one guest and see how it works.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRECIO -->
+<section class="precio section-sm">
+  <div class="wrap inner">
+    <div class="eyebrow" data-lang="es" style="color:var(--sol-claro)">Transparencia</div>
+    <div class="eyebrow" data-lang="en" style="color:var(--sol-claro)">Transparency</div>
+    <h2 data-lang="es">Lo que hago y lo que no.</h2>
+    <h2 data-lang="en">What I do and what I don't.</h2>
+    <p data-lang="es">Cobro por coordinar. No revendo pistas, hoteles, vuelos ni traslados: cada proveedor se contrata y se paga directamente.</p>
+    <p data-lang="en">I charge for coordination. I don't resell courts, hotels, flights or transfers: each provider is booked and paid directly.</p>
+    <p data-lang="es">Y no prometo lo que no depende de mí. Te digo cómo están las cosas, no lo que quieres oír.</p>
+    <p data-lang="en">And I don't promise what isn't up to me. I'll tell you how things really stand, not what you want to hear.</p>
+  </div>
+</section>
+
+<!-- CIERRE -->
+<section class="cierre" id="contacto">
+  <div class="cierre-bg"></div>
+  <div class="inner">
+    <h2 data-lang="es">¿Traes grupos o tienes huéspedes que juegan?</h2>
+    <h2 data-lang="en">Bringing groups, or hosting guests who play?</h2>
+    <p data-lang="es">Escríbeme y lo hablamos.</p>
+    <p data-lang="en">Drop me a line and let's talk.</p>
+    <div class="hero-btns" data-lang="es">
+      <a href="mailto:info@sun-padel.com?subject=Touroperador%20%C2%B7%20Colaboraci%C3%B3n%20con%20Sun%26P%C3%A1del&amp;body=Hola%20Luis%2C%0A%0ASoy%20%5Bnombre%5D%2C%20de%20%5Bempresa%5D.%20Organizamos%20viajes%20de%20p%C3%A1del%20desde%20%5Bpa%C3%ADs%5D%20y%20nos%20interesa%20hablar%20de%20Marbella%20y%20Estepona.%0A%0AGrupos%20al%20a%C3%B1o%20%28aprox.%29%3A%20%0AFechas%20que%20nos%20interesan%3A%20%0A%0AGracias%2C%0A" class="btn">Soy touroperador</a>
+      <a href="mailto:info@sun-padel.com?subject=Alquiler%20tur%C3%ADstico%20%C2%B7%20Colaboraci%C3%B3n%20con%20Sun%26P%C3%A1del&amp;body=Hola%20Luis%2C%0A%0ASoy%20%5Bnombre%5D%2C%20de%20%5Bempresa%5D.%20Gestionamos%20%5Bn%C3%BAmero%5D%20alojamientos%20en%20%5Bzona%5D%20y%20nos%20interesa%20ofrecer%20p%C3%A1del%20a%20nuestros%20hu%C3%A9spedes.%0A%0AGracias%2C%0A" class="btn btn-ghost">Gestiono alquileres turísticos</a>
+    </div>
+    <div class="hero-btns" data-lang="en">
+      <a href="mailto:info@sun-padel.com?subject=Tour%20operator%20%C2%B7%20Working%20with%20Sun%26P%C3%A1del&amp;body=Hi%20Luis%2C%0A%0AI%27m%20%5Bname%5D%20from%20%5Bcompany%5D.%20We%20run%20padel%20trips%20from%20%5Bcountry%5D%20and%20we%27d%20like%20to%20talk%20about%20Marbella%20and%20Estepona.%0A%0AGroups%20per%20year%20%28approx.%29%3A%20%0ADates%20we%27re%20looking%20at%3A%20%0A%0AThanks%2C%0A" class="btn">I'm a tour operator</a>
+      <a href="mailto:info@sun-padel.com?subject=Holiday%20rentals%20%C2%B7%20Working%20with%20Sun%26P%C3%A1del&amp;body=Hi%20Luis%2C%0A%0AI%27m%20%5Bname%5D%20from%20%5Bcompany%5D.%20We%20manage%20%5Bnumber%5D%20properties%20in%20%5Barea%5D%20and%20we%27d%20like%20to%20offer%20padel%20to%20our%20guests.%0A%0AThanks%2C%0A" class="btn btn-ghost">I manage holiday rentals</a>
+    </div>
+    <p class="viajeros" data-lang="es">¿Viajas por tu cuenta y quieres jugar aquí? <a href="mailto:info@sun-padel.com?subject=Viaje%20de%20p%C3%A1del%20por%20mi%20cuenta&amp;body=Hola%20Luis%2C%0A%0AFechas%3A%20%0ACu%C3%A1ntos%20somos%3A%20%0AQu%C3%A9%20buscamos%3A%20%0A%0AGracias%2C%0A">Escríbeme también.</a></p>
+    <p class="viajeros" data-lang="en">Travelling on your own and want to play here? <a href="mailto:info@sun-padel.com?subject=Padel%20trip%20on%20my%20own&amp;body=Hi%20Luis%2C%0A%0ADates%3A%20%0AHow%20many%20of%20us%3A%20%0AWhat%20we%27re%20looking%20for%3A%20%0A%0AThanks%2C%0A">Drop me a line too.</a></p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="logo">Sun<b>&</b>Pádel</div>
+    <p data-lang="es">Costa del Sol · sun-padel.com · <a href="mailto:info@sun-padel.com">info@sun-padel.com</a> · <a href="https://instagram.com/sunpadel">@sunpadel</a></p>
+    <p data-lang="en">Costa del Sol · sun-padel.com · <a href="mailto:info@sun-padel.com">info@sun-padel.com</a> · <a href="https://instagram.com/sunpadel">@sunpadel</a></p>
+
+    <div class="footer-legal" data-lang="es">
+      <button onclick="openModal('aviso')">Aviso legal</button><span>·</span>
+      <button onclick="openModal('privacidad')">Política de privacidad</button><span>·</span>
+      <button onclick="openModal('cookies')">Política de cookies</button><span>·</span>
+      <button onclick="openModal('terminos')">Condiciones del servicio</button>
+    </div>
+    <div class="footer-legal" data-lang="en">
+      <button onclick="openModal('aviso')">Legal notice</button><span>·</span>
+      <button onclick="openModal('privacidad')">Privacy policy</button><span>·</span>
+      <button onclick="openModal('cookies')">Cookie policy</button><span>·</span>
+      <button onclick="openModal('terminos')">Terms of service</button>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ MODALES LEGALES ============ -->
+
+<!-- AVISO LEGAL -->
+<div class="modal-ov" id="modal-aviso" onclick="if(event.target===this)closeModal('aviso')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('aviso')" aria-label="Cerrar">×</button>
+    <div data-lang="es">
+      <div class="modal-eyebrow">Aviso legal</div>
+      <h2>Aviso legal</h2>
+      <p>En cumplimiento de la Ley 34/2002 de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSI-CE), se informa de los siguientes datos:</p>
+      <ul>
+        <li><strong>Titular:</strong> Luis González Sánchez</li>
+        <li><strong>NIF:</strong> 15436252R</li>
+        <li><strong>Domicilio:</strong> C/ Nicaragua 94, 1ºC, 29680 Estepona (Málaga), España</li>
+        <li><strong>Contacto:</strong> info@sun-padel.com</li>
+        <li><strong>Sitio web:</strong> sun-padel.com</li>
+      </ul>
+      <p>Sun&Pádel es un servicio personal de coordinación local de pádel en la Costa del Sol, dirigido principalmente a touroperadores y empresas de alquiler turístico. El titular presta un servicio de asesoramiento y coordinación a cambio de una tarifa, y no comercializa, revende ni intermedia servicios de alojamiento, transporte o viajes.</p>
+      <p>El acceso y uso de este sitio implica la aceptación de las presentes condiciones. El titular se reserva el derecho a modificar los contenidos sin previo aviso y no se responsabiliza del uso que terceros hagan de la información aquí publicada.</p>
+    </div>
+    <div data-lang="en">
+      <div class="modal-eyebrow">Legal notice</div>
+      <h2>Legal notice</h2>
+      <p>In accordance with Spanish Law 34/2002 on Information Society Services and Electronic Commerce (LSSI-CE), the following information is provided:</p>
+      <ul>
+        <li><strong>Owner:</strong> Luis González Sánchez</li>
+        <li><strong>Tax ID (NIF):</strong> 15436252R</li>
+        <li><strong>Address:</strong> C/ Nicaragua 94, 1ºC, 29680 Estepona (Málaga), Spain</li>
+        <li><strong>Contact:</strong> info@sun-padel.com</li>
+        <li><strong>Website:</strong> sun-padel.com</li>
+      </ul>
+      <p>Sun&Pádel is a personal local padel coordination service on the Costa del Sol, aimed mainly at tour operators and holiday rental companies. The owner provides advisory and coordination services for a fee and does not sell, resell, or act as an intermediary for accommodation, transport, or travel services.</p>
+      <p>Access to and use of this website implies acceptance of these terms. The owner reserves the right to modify the content without prior notice and accepts no liability for third-party use of the information published here.</p>
+    </div>
+  </div>
+</div>
+
+<!-- POLÍTICA DE PRIVACIDAD -->
+<div class="modal-ov" id="modal-privacidad" onclick="if(event.target===this)closeModal('privacidad')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('privacidad')" aria-label="Cerrar">×</button>
+    <div data-lang="es">
+      <div class="modal-eyebrow">Privacidad</div>
+      <h2>Política de privacidad</h2>
+      <h3>Responsable del tratamiento</h3>
+      <p>Luis González Sánchez, NIF 15436252R, C/ Nicaragua 94, 1ºC, 29680 Estepona (Málaga), España. Contacto: info@sun-padel.com.</p>
+      <h3>Qué datos tratamos</h3>
+      <p>Cuando escribes al correo de contacto, tratamos los datos que nos facilitas: nombre, empresa, dirección de correo electrónico y cualquier información que incluyas en tu mensaje (por ejemplo, el tipo de grupos que organizas, fechas o los alojamientos que gestionas).</p>
+      <h3>Con qué finalidad</h3>
+      <p>Utilizamos tus datos únicamente para responder a tu consulta y, si colaboramos, para coordinar los servicios acordados.</p>
+      <h3>Base legal</h3>
+      <p>El tratamiento se basa en tu consentimiento al contactarnos y, en su caso, en la ejecución del servicio o acuerdo de colaboración.</p>
+      <h3>Cuánto tiempo los guardamos</h3>
+      <p>Conservamos tus datos el tiempo necesario para atender tu consulta o prestar el servicio, y después durante el plazo legalmente exigible. Cuando dejan de ser necesarios, se eliminan.</p>
+      <h3>Con quién los compartimos</h3>
+      <p>No vendemos ni cedemos tus datos. Para prestar el servicio podemos facilitar datos estrictamente necesarios a los proveedores que tú o tus clientes contratáis y pagáis directamente (por ejemplo, un club de pádel o una empresa de traslados), siempre con tu conocimiento.</p>
+      <h3>Tus derechos</h3>
+      <p>Puedes acceder, rectificar, suprimir, oponerte, limitar o portar tus datos escribiendo a info@sun-padel.com. También puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es).</p>
+    </div>
+    <div data-lang="en">
+      <div class="modal-eyebrow">Privacy</div>
+      <h2>Privacy policy</h2>
+      <h3>Data controller</h3>
+      <p>Luis González Sánchez, NIF 15436252R, C/ Nicaragua 94, 1ºC, 29680 Estepona (Málaga), Spain. Contact: info@sun-padel.com.</p>
+      <h3>What data we process</h3>
+      <p>When you write to our contact address, we process the data you provide: name, company, email address, and any information you include in your message (for example, the type of groups you run, dates, or the properties you manage).</p>
+      <h3>Purpose</h3>
+      <p>We use your data solely to respond to your enquiry and, if we work together, to coordinate the agreed services.</p>
+      <h3>Legal basis</h3>
+      <p>Processing is based on your consent when contacting us and, where applicable, on the performance of the service or partnership agreement.</p>
+      <h3>How long we keep it</h3>
+      <p>We keep your data for as long as needed to handle your enquiry or provide the service, and thereafter for any legally required period. Once no longer necessary, it is deleted.</p>
+      <h3>Who we share it with</h3>
+      <p>We do not sell or transfer your data. To provide the service, we may pass strictly necessary details to the providers that you or your clients hire and pay directly (for example, a padel club or a transfer company), always with your knowledge.</p>
+      <h3>Your rights</h3>
+      <p>You may access, rectify, erase, object to, restrict, or port your data by writing to info@sun-padel.com. You may also lodge a complaint with the Spanish Data Protection Agency (aepd.es).</p>
+    </div>
+  </div>
+</div>
+
+<!-- POLÍTICA DE COOKIES -->
+<div class="modal-ov" id="modal-cookies" onclick="if(event.target===this)closeModal('cookies')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('cookies')" aria-label="Cerrar">×</button>
+    <div data-lang="es">
+      <div class="modal-eyebrow">Cookies</div>
+      <h2>Política de cookies</h2>
+      <p>Este sitio web es una página informativa y no utiliza cookies de análisis, publicidad ni seguimiento. Únicamente pueden emplearse cookies técnicas estrictamente necesarias para el funcionamiento básico de la web (por ejemplo, recordar el idioma seleccionado). Estas cookies no requieren consentimiento y no recogen datos personales con fines comerciales.</p>
+      <p>Si en el futuro se incorporan herramientas de análisis o de terceros, esta política se actualizará y se solicitará tu consentimiento cuando sea necesario.</p>
+    </div>
+    <div data-lang="en">
+      <div class="modal-eyebrow">Cookies</div>
+      <h2>Cookie policy</h2>
+      <p>This website is an informational page and does not use analytics, advertising, or tracking cookies. Only strictly necessary technical cookies may be used for the site's basic functioning (for example, remembering your selected language). These cookies do not require consent and do not collect personal data for commercial purposes.</p>
+      <p>If analytics or third-party tools are added in the future, this policy will be updated and your consent requested where required.</p>
+    </div>
+  </div>
+</div>
+
+<!-- CONDICIONES DEL SERVICIO -->
+<div class="modal-ov" id="modal-terminos" onclick="if(event.target===this)closeModal('terminos')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('terminos')" aria-label="Cerrar">×</button>
+    <div data-lang="es">
+      <div class="modal-eyebrow">Condiciones</div>
+      <h2>Condiciones del servicio</h2>
+      <h3>1. Objeto</h3>
+      <p>Sun&Pádel es un servicio personal de coordinación local prestado por Luis González Sánchez. Asesora y coordina la experiencia de pádel en la Costa del Sol de los clientes de touroperadores y empresas de alquiler turístico y, en su caso, de particulares.</p>
+      <h3>2. Naturaleza del servicio</h3>
+      <p>Sun&Pádel cobra una tarifa de coordinación. Sun&Pádel no es una agencia de viajes y no comercializa viajes combinados ni servicios de viaje vinculados.</p>
+      <h3>3. Qué incluye y qué no</h3>
+      <p>Lo que incluye cada colaboración se fija por escrito en una propuesta antes de empezar. Sun&Pádel recomienda clubes, organiza los días, coordina traslados con empresas profesionales y ofrece apoyo local durante la estancia. Sun&Pádel no revende ni intermedia alojamiento, vuelos ni transportes: cada proveedor se contrata y se paga directamente, ya sea por el colaborador o por sus clientes. Sun&Pádel no percibe comisión alguna de dichos proveedores.</p>
+      <h3>4. Reservas de pista</h3>
+      <p>Las pistas se reservan a través de las plataformas de cada club (Playtomic, Taykus u otras). Sun&Pádel no garantiza la disponibilidad de pista en fechas u horarios concretos, especialmente en temporada alta, al depender de la disponibilidad abierta de los clubes.</p>
+      <h3>5. Responsabilidad</h3>
+      <p>Sun&Pádel responde de la calidad de su labor de coordinación. No se responsabiliza de los servicios prestados por terceros (clubes, alojamientos, transportes) contratados directamente por el colaborador o sus clientes.</p>
+      <h3>6. Precio y pago</h3>
+      <p>La tarifa (por grupo, por encargo o mediante cuota mensual) se acuerda por escrito antes de prestar el servicio. Los pagos a proveedores externos son ajenos a Sun&Pádel.</p>
+      <h3>7. Legislación aplicable</h3>
+      <p>Estas condiciones se rigen por la legislación española. Para cualquier controversia, las partes se someten a los juzgados y tribunales del domicilio del titular, salvo que la ley disponga otro fuero.</p>
+    </div>
+    <div data-lang="en">
+      <div class="modal-eyebrow">Terms</div>
+      <h2>Terms of service</h2>
+      <h3>1. Purpose</h3>
+      <p>Sun&Pádel is a personal local coordination service provided by Luis González Sánchez. It advises on and coordinates the padel experience on the Costa del Sol for the clients of tour operators and holiday rental companies and, where applicable, for individual travellers.</p>
+      <h3>2. Nature of the service</h3>
+      <p>Sun&Pádel charges a coordination fee. Sun&Pádel is not a travel agency and does not sell package holidays or linked travel arrangements.</p>
+      <h3>3. What it includes and excludes</h3>
+      <p>What each partnership includes is set out in a written proposal before work begins. Sun&Pádel recommends clubs, organises the days, coordinates transfers with professional companies and provides local support during the stay. Sun&Pádel does not resell or act as an intermediary for accommodation, flights, or transport: each provider is hired and paid directly, either by the partner or by its clients. Sun&Pádel receives no commission from those providers.</p>
+      <h3>4. Court bookings</h3>
+      <p>Courts are booked through each club's own platform (Playtomic, Taykus, or others). Sun&Pádel does not guarantee court availability on specific dates or times, particularly in high season, as this depends on the clubs' open booking availability.</p>
+      <h3>5. Liability</h3>
+      <p>Sun&Pádel is responsible for the quality of its coordination work. It is not liable for services provided by third parties (clubs, accommodation, transport) hired directly by the partner or its clients.</p>
+      <h3>6. Price and payment</h3>
+      <p>The fee (per group, per assignment, or as a monthly fee) is agreed in writing before the service is provided. Payments to external providers are outside Sun&Pádel's scope.</p>
+      <h3>7. Governing law</h3>
+      <p>These terms are governed by Spanish law. Any dispute shall be submitted to the courts of the owner's domicile, unless the law provides otherwise.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+var TITLES = {
+  en: "Sun&Pádel — Local padel partner for tour operators in Marbella & Estepona",
+  es: "Sun&Pádel — Socio local de pádel para touroperadores en Marbella y Estepona"
+};
+function setLang(lang){
+  document.body.className = lang;
+  document.documentElement.lang = lang;
+  document.title = TITLES[lang];
+  document.getElementById('btn-es').classList.toggle('active', lang==='es');
+  document.getElementById('btn-en').classList.toggle('active', lang==='en');
+}
+
+function openModal(id){
+  document.getElementById('modal-'+id).classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeModal(id){
+  document.getElementById('modal-'+id).classList.remove('open');
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown', function(e){
+  if(e.key==='Escape'){
+    document.querySelectorAll('.modal-ov.open').forEach(function(m){m.classList.remove('open')});
+    document.body.style.overflow='';
+  }
+});
+</script>
+
+</body>
+</html>
